@@ -1,0 +1,60 @@
+//Scansione documento
+
+- accendo la stampante
+
+    ? SE la stampante è collegata alla corrente 
+        - procedo
+
+    : ALTRIMENTI
+        - la attacco alla corrente
+
+- individuo la stampante sul pc
+
+    ? SE ha effettuato il collegamento
+        - procedo
+
+    : ALTRIMENTI
+        - la collego 
+
+- apro software dello scanner
+    - scelgo il formato 
+    - scelgo il numero di copie 
+
+- prendo i documenti da scansionare
+
+    ? SE il foglio è compatibile con la stampante
+        - effettuo la scansione
+
+    : ALTRIMENTI
+        - trovo un metodo alternativo (es. copisteria)
+
+{
+
+    - inserisco parte frontale del foglio
+
+        ? SE la scansione è andata a buon fine
+            - scan eseguito
+
+        : ALTRIMENTI
+            - la ripeto
+
+    - verifico la parte retro del documento 
+
+        ? SE è presente parte retro 
+            - passo alla parte successiva
+
+        : ALTRIMENTI
+            - passo al documento successivo
+
+    - inserisco parte retro del foglio
+
+}
+
+- creo una cartella dedicata
+- salvo all'interno della cartella dedicata
+
+    ? SE i file sono corretti
+        - operazione eseguita (mission completed)
+
+    : ALTRIMENTI 
+        - ripeto l'operazione
